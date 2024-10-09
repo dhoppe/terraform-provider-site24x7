@@ -236,7 +236,7 @@ resource "site24x7_website_monitor" "website_monitor" {
 * `use_name_server` (Boolean) Resolve the IP address using Domain Name Server.
 * `forced_ips` (String) Provide the domain name or IP addresses to be used for monitoring instead of using the IPs resolved from the given URL.
 * `up_status_codes` (String) Provide a comma-separated list of HTTP status codes that indicate a successful response. You can specify individual status codes, as well as ranges separated with a colon.
-* `follow_http_redirection` (String) Enter true to follow up to 10 HTTP redirection responses or false not to follow HTTP redirections. Default value is true.
+* `follow_http_redirection` (Boolean) Enter true to follow up to 10 HTTP redirection responses or false not to follow HTTP redirections. Default value is true.
 * `ignore_cert_err` (Boolean) Enter true or false to Trust the Server SSL Certificate. Default value is true.
 * `ssl_protocol` (String) Specify the version of the SSL protocol. If you are not sure about the version, use Auto.
 * `http_protocol` (String) Specify the version of the HTTP protocol. Default value is H1.1.
